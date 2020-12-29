@@ -1,0 +1,79 @@
+@app.route('/calculator-function.html')
+def intro_start():
+    return render_template("calculator-function.html")
+
+@app.route('/calculator.html')
+def intro_start():
+    return render_template("calculator.html")
+
+@app.route('/ending.html')
+def intro_start():
+    return render_template("ending.html")
+
+@app.route('/ending2.html')
+def intro_start():
+    return render_template("ending2.html")
+
+@app.route('/image-continue.html')
+def intro_start():
+    return render_template("image-continue.html")
+
+@app.route('/image-seg-beg.html')
+def intro_start():
+    return render_template("image-seg-beg.html")
+
+@app.route('/image-seg-end.html')
+def intro_start():
+    return render_template("image-seg-end.html")
+
+@app.route('/image-seg-end2.html')
+def intro_start():
+    return render_template("image-seg-end2.html")
+
+@app.route('/image-seg-end3.html')
+def intro_start():
+    return render_template("image-seg-end3.html")
+
+@app.route('/index.html')
+def intro_start():
+    return render_template("index.html")
+
+@app.route('/input.html')
+def intro_start():
+    return render_template("input.html")
+
+@app.route('/interactive-food.html')
+def intro_start():
+    return render_template("interactive-food.html")
+
+@app.route('/interactive-food2.html')
+def intro_start():
+    return render_template("interactive-food2.html")
+
+@app.route('/interactive-food3.html')
+def intro_start():
+    return render_template("interactive-food3.html")
+
+@app.route('/intro-beg.html')
+def intro_start():
+    return render_template("intro-beg.html")
+
+@app.route('/room-home-fade.html')
+def intro_start():
+    return render_template("room-home-fade.html")
+
+@app.route('/room-home.html')
+def intro_start():
+    return render_template("room-home.html")
+
+@app.route('/room-home1.html')
+def intro_start():
+    return render_template("room-home1.html")
+
+@app.route('/what-is-carbon1.html')
+def intro_start():
+    return render_template("what-is-carbon1.html")
+
+@app.route('/what-is-carbon2.html')
+def intro_start():
+    return render_template("what-is-carbon2.html")

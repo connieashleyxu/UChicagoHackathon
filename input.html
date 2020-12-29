@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics 
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-174246777-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-174246777-1");
+    </script>
+    -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Leaf</title>
+
+    <!-- favicon-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.com/b5754465-3a1d-4b1f-a606-a0454960aba7%2FLeaf_Logo.png?v=1608169523295"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script1.js" defer></script>
+    <script src="/js/materialize.js" defer></script>
+    <script src="/js/materialize.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- import social media footer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- header.logo -->
+    <header class="header" id="myHeader">
+      <!-- nav bar -->
+      <nav>
+        <img
+          src="https://cdn.glitch.com/b5754465-3a1d-4b1f-a606-a0454960aba7%2FLeaf_Logo.png?v=1608169523295"
+          alt="leaf logo"
+          class="logo"
+        />
+      </nav>
+    </header>
+
+    <img
+      src="https://cdn.glitch.com/b5754465-3a1d-4b1f-a606-a0454960aba7%2F255c9669-2b88-46f9-965d-01c1a427d34a.image.png?v=1608169909089"
+      alt="happy bear introducing image segmentation"
+      class="bear-happy"
+    />
+
+    <div class="bottom-right">
+      <div class="buttons">
+        <form action="/input" method="post" enctype="multipart/form-data">
+          <div class="container1">
+            <label class="btn effect01">
+              <input
+                type="file"
+                name="fileUpload"
+                id="fileUpload"
+                accept="image/*"
+                style="display:none"
+              />
+              <span>Select File</span>
+            </label>
+          </div>
+          <div class="container">
+            <a href="/image-continue.html" class="btn effect01">
+              <label class="btn effect01">
+                <input
+                  type="submit"
+                  name="submit"
+                  value="submit"
+                  class="btn effect01"
+                  style="display:none"
+                />
+                <span>Submit</span>
+              </label>
+            </a>
+          </div>
+        </form>
+        <div style="display:none">
+          {% if fooResponse is not none %}
+          <ul>
+            {% for item in fooResponse %}
+            <li>{{item}}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
